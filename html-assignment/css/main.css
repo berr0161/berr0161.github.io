@@ -1,0 +1,37 @@
+body {
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: rgb(194, 194, 194);
+}
+
+.site-title {
+    color:darkblue
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+
+dl:nth-child(2){
+    background-color:rgb(55, 255, 55)
+}
+
+ul {
+    background-color: cornsilk;
+    list-style-type: square;
+}
+
+
+a:link{
+    border-style: solid;
+    text-decoration: none;
+    background-color: chocolate;
+}
+
+a:hover, a:active{
+    background-color: cyan;
+    color:blueviolet
+}
