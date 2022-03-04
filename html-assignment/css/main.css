@@ -36,3 +36,8 @@ a:hover, a:active{
     background-color: cyan;
     color:blueviolet
 }
+
+h1{
+    font-weight:normal ;
+    color: red;
+}
