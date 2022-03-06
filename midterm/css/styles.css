@@ -1,12 +1,27 @@
+
 body{
     background-color:lightseagreen
 }
-h1 {
-    text-align: center;
-    color: white
+/*box model*/
+.green-box{
+    width: 1000px; 
+    height: 1000px;
+    background-color: mediumaquamarine;
 }
 
+
+
+h1 {
+    position: center;
+    text-align: center;
+    color: white
+    
+}
+
+
+
 .wrapper{
-    margin: 10
-    0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    
 }
