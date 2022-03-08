@@ -1,15 +1,17 @@
+header{
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-repeat: no-repeat;
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 body{
-    background-color:lightseagreen
-}
-/*box model*/
-.green-box{
-    width: 1000px; 
-    height: 1000px;
-    background-color: mediumaquamarine;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#aad4cf
 
-
+}
 
 h1 {
     position: center;
@@ -18,10 +20,49 @@ h1 {
     
 }
 
-
-
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #b6ebe5;
+    padding:10px;
     
 }
+img{
+    width: 250px;
+    /* apply float to the lone starfish image */
+    float: left;
+}
+nav ul{
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    /*width: 100px */
+}
+
+nav li::before{
+    content:"|";
+}
+nav li :nth-child(2){
+    display: none;
+}
+
+nav li a{
+    text-align: center;
+    padding: 33px;
+}
+
+.contact{
+    width: 900px;
+    height: 400px;
+    padding: 20px;
+    border: 2px solid black; 
+    margin: 15px; 
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
