@@ -18,6 +18,9 @@ header{
     background-color: rgb(255, 255, 255, 0.6);
     padding: 10px;
 }
+nav li::before{
+    content:"|";
+}
 body{
     margin: 0 auto;
     width: 630px;
@@ -87,8 +90,9 @@ input[type=text] {
 
 /*creates send button*/
 .button {
+    background-color:rgb(255, 255, 255, 0.6);
     margin-top: 10px;
-    border:black;
+    border: 2px solid black;
     color: black;
     padding: 10px 10px;
     text-align: center;
