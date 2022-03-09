@@ -2,7 +2,9 @@ header{
     width: 630px;
     margin:0;
 }
+/*applies style to main tittle*/
 .maintittle{
+    padding-top: 90px;
     padding-left: 200px;
     margin: auto;
     box-sizing: border-box;
@@ -24,7 +26,9 @@ nav li::before{
 body{
     margin: 0 auto;
     width: 630px;
+    /*applies font to text*/
     font-family: Arial, Helvetica, sans-serif;
+    /*applies color to background*/
     background-color:#aad4cf
 }
 
@@ -33,7 +37,7 @@ body{
     /* apply float to the lone starfish image */
     float: left;
     /*applies padding to starfish image*/
-    padding: 8px;
+    padding-right:  8px;
 }
 
 /*applies font size to paragraph*/
@@ -42,7 +46,7 @@ p{
 }
 /*applies font size to facts*/
 .facts{
-    font-size: 12px;
+    font-size: 13px;
 }
 nav li {
     font-size: 17px;
@@ -74,23 +78,15 @@ input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  }
+}
 
-  a:link{
+a:link{
     border-style: solid;
     text-decoration: none;
   }
-/*apllies style footer*/
-  footer{
-    color: black;
-    text-align: right;
-    margin: 0 auto;
-    width: 91.5%;
-}
-
-/*creates send button*/
+/*applies style to (send)button*/
 .button {
-    background-color:rgb(255, 255, 255, 0.6);
+    background-color: transparent;
     margin-top: 10px;
     border: 2px solid black;
     color: black;
@@ -102,3 +98,9 @@ input[type=text] {
     cursor: pointer;
   }
 
+/*applies style footer*/
+  footer{
+    color: black;
+    text-align: right;
+    padding: 1px;
+}
