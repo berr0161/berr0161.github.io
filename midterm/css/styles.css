@@ -20,8 +20,14 @@ header{
     background-color: rgb(255, 255, 255, 0.6);
     padding: 10px;
 }
-nav li::before{
-    content:"|";
+
+/*gives border to the nav betwwen home and story*/
+nav li:nth-child(1){
+    border-right: 2px solid black;
+}
+/*gives border to the nav betwwen home and contact*/
+nav li:nth-child(2){
+    border-right: 2px solid black;
 }
 body{
     margin: 0 auto;
@@ -37,7 +43,7 @@ body{
     /* apply float to the lone starfish image */
     float: left;
     /*applies padding to starfish image*/
-    padding-right:  8px;
+    padding-right: 8px;
 }
 
 /*applies font size to paragraph*/
@@ -98,7 +104,7 @@ a:link{
     cursor: pointer;
   }
 
-/*applies style footer*/
+/*applies style to footer*/
   footer{
     color: black;
     text-align: right;
