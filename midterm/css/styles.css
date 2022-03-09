@@ -9,7 +9,11 @@ header{
     width: 100%;
     
 }
+.wrapper{
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 10px;
 
+}
 body{
     margin: 0 auto;
     width: 50%;
@@ -57,11 +61,10 @@ nav li a{
 }
 
 .contact{
-    width: 570px;
-    height: 350px;
+    width: 565px;
+    height: 300px;
     padding: 20px;
     border: 2px solid black; 
-    margin: 10px; 
 }
 
 input[type=text] {
