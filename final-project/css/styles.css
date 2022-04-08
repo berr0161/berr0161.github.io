@@ -6,3 +6,18 @@ html {
     width: 600px;
     margin: auto;
 }
+
+.navli{
+    background-color:#222;
+    width: 600px;
+    margin: auto;
+}
+
+.navli{
+    color: #c78c06;
+
+}
+
+a:link{
+    text-decoration: none;
+}
