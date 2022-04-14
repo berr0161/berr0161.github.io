@@ -36,12 +36,29 @@ p {
     margin: auto;
 }
 
+.logo {
+
+    width: 100px;
+}
+.logo2{
+    background-color: #c78c06;
+}
+
 .navli{
-    background-color:#222;
+    background-color: #222;
+}
+nav li a {
+    padding: 5px;
+    color: #c78c06;
+}
+.navli{
+    
     width: 600px;
     margin: auto;
 }
-
+ul{
+    color: #c78c06;
+}
 .navli{
     color: #c78c06;
 
@@ -150,4 +167,9 @@ td, th {
   
   tr:nth-child(1){
     background-color: #ffe6ac;
+  }
+
+  footer{
+      background-color: #222;
+      color: #c78c06;
   }
