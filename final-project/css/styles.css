@@ -36,11 +36,19 @@ p {
     margin: auto;
 }
 
-.logo {
+header {
+    align-content: center;
+    background-color: #222;
+    margin: auto;
+    width: 600px;
+}
 
+.logo {
+    height: 100px;
     width: 100px;
 }
 .logo2{
+    height: 150px;
     background-color: #c78c06;
 }
 
@@ -52,21 +60,53 @@ nav li a {
     color: #c78c06;
 }
 .navli{
-    
     width: 600px;
     margin: auto;
 }
 ul{
+    text-align: center;
     color: #c78c06;
 }
-.navli{
-    color: #c78c06;
+nav li:hover{
+    background-color: #c78c06;
+    color: #222;
+}
+.nav li a:hover {
+    color: #222;
+}
 
-}
 
 a:link{
     text-decoration: none;
 }
+
+input[type=texts] {
+    padding: 10px;
+    width: 550px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .main .maincontent {
+    box-sizing: border-box;
+    background-color: #2229 ;
+    padding: 10px;
+}
+.main {
+    color: white;
+    background-image: url("../images/main-banner.jpg");
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.search {
+    color: #c78c06;
+    border: 1px solid #c78c06
+}
+
 img {
     width: 100%;
     height: auto;
@@ -83,7 +123,6 @@ img {
     width: 600px;
     margin: auto;
 }
-
 
 .services .content {
     padding: 10px;
@@ -133,6 +172,11 @@ img {
 .vision{
     color: white;
     background-image: url("../images/vision.jpg");
+    width: 650px;
+    margin: auto;
+    background-position: center;
+    background-size: 650px;
+
 
 }
 
@@ -147,11 +191,25 @@ img {
 
 
 
+input[type=text] {
+    width: 600px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
 
+input[id=message]{
+    width: 600px;
+    height: 80px;
+    padding: 12px 20px;
+    margin: 8px 0;
 
+  }
 
-
-
+.button8{
+    color:#c78c06;
+    background-color: #222;
+}
 
 
 td, th {
