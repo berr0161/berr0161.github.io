@@ -6,7 +6,9 @@ html {
 *{
     box-sizing: border-box;
 }
-
+body {
+    overflow-x: hidden;
+}
 h1{
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -31,16 +33,15 @@ p {
     margin-bottom: 1rem;
 }
 .wrapper{
-    padding: 10px;
-    width: 600px;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
     align-content: center;
     background-color: #222;
     margin: auto;
-    width: 600px;
+    width: 80%;
 }
 
 .logo {
@@ -87,25 +88,50 @@ input[id=search]{
     margin: 8px 0;
     box-sizing: border-box;
   }
-  .main .maincontent {
-    box-sizing: border-box;
+.main .maincontent {
     background-color: #2229 ;
     padding: 10px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 85%;
+}
+.container {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.contain {
+    width: 80%;
 }
 .main {
+    position: relative;
     color: white;
-    background-image: url("../images/main-banner.jpg");
-    width: 600px;
-    height: 400px;
+    /* background-image: url("../images/main-banner.jpg"); */
+    /* height: 400px; */
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
 }
+/* .main img {
+    position: absolute;
+} */
 .search {
     width: 1.2rem;
     color: #c78c06;
     border: 1px solid #c78c06
+}
+.services .card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -121,7 +147,6 @@ img {
 
 .about{
     background-color: #ffe6ac ;
-    width: 600px;
     margin: auto;
 }
 
@@ -173,8 +198,9 @@ img {
 .vision{
     color: white;
     background-image: url("../images/vision.jpg");
-    width: 650px;
-    margin: auto;
+    padding: 10px;
+    width: 110%;
+    margin-left: -5%;
     background-position: center;
     background-size: 650px;
 }
@@ -232,14 +258,50 @@ td, th {
   footer{
       margin: auto;
       padding: 10px;
-      width: 650px;
+      width: 80%;
       background-color: #222;
       color: #c78c06;
   }
-
-@media screen and (min-width: 760px) {
-    .services{
-        display: grid;
-        template-
+  
+@media screen and (min-width: 1200px) {
+    header {
+        width: 100%;
     }
+    footer {
+        width: 100%;
+    }
+    .contain .services {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "area0 area0 area0 area0 area0 area0"
+            "area1 area1 area1 area2 area2 area2"
+            "area3 area3 area4 area4 area5 area5";
+        grid-gap: 1rem;
+    }
+    .contain .services .card .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contain .services .title {
+        grid-area: area0;
+    }
+    .digital {
+        grid-area: area1;
+    } 
+    .marketing {
+        grid-area: area2;
+    }
+    .video {
+        grid-area: area3;
+    }
+    .web {
+        grid-area: area4;
+    }
+    .print {
+        grid-area: area5;
+    }
+
 }
