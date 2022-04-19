@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 h1{
-    font-size: 4rem;
+    font-size: 22px;
     margin-bottom: 1rem;
 }
 
@@ -41,7 +41,7 @@ header {
     align-content: center;
     background-color: #222;
     margin: auto;
-    width: 80%;
+    width: 85%;
 }
 
 .logo {
@@ -100,14 +100,17 @@ input[id=search]{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 85%;
+    height: 90%;
+}
+.main .maincontent .text {
+    font-size: 12px;
 }
 .container {
     width: 100vw;
     overflow-x: hidden;
 }
 .contain {
-    width: 80%;
+    width: 85%;
 }
 .main {
     position: relative;
@@ -146,6 +149,7 @@ img {
 }
 
 .about{
+    padding: 10px;
     background-color: #ffe6ac ;
     margin: auto;
 }
@@ -202,7 +206,7 @@ img {
     width: 110%;
     margin-left: -5%;
     background-position: center;
-    background-size: 650px;
+    background-size: cover;
 }
 
 .button7{
@@ -262,6 +266,10 @@ td, th {
       background-color: #222;
       color: #c78c06;
   }
+
+@media screen and (min-width: 500px) {
+
+}
   
 @media screen and (min-width: 1200px) {
     header {
@@ -303,5 +311,6 @@ td, th {
     .print {
         grid-area: area5;
     }
+    
 
 }
