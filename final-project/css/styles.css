@@ -88,11 +88,14 @@ input[id=search]{
     box-sizing: border-box;
   }
   .main .maincontent {
+    z-index: 1;
+    margin-top: 3rem;
     box-sizing: border-box;
     background-color: #2229 ;
     padding: 10px;
 }
 .main {
+    z-index: -1;
     color: white;
     background-image: url("../images/main-banner.jpg");
     width: 600px;
