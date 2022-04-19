@@ -88,14 +88,11 @@ input[id=search]{
     box-sizing: border-box;
   }
   .main .maincontent {
-    z-index: 1;
-    margin-top: 3rem;
     box-sizing: border-box;
     background-color: #2229 ;
     padding: 10px;
 }
 .main {
-    z-index: -1;
     color: white;
     background-image: url("../images/main-banner.jpg");
     width: 600px;
@@ -226,8 +223,6 @@ td, th {
     background-color: #ffe6ac;
   }
 
-
-
   .map iframe {
     border:0;
     height: 450px;
@@ -235,14 +230,16 @@ td, th {
 }
 
   footer{
+      margin: auto;
       padding: 10px;
-      width: 600px;
+      width: 650px;
       background-color: #222;
       color: #c78c06;
   }
 
-  @media screen and (min-width: 760px) {
-      header {
-
-      }
-  }
+@media screen and (min-width: 760px) {
+    .services{
+        display: grid;
+        template-
+    }
+}
