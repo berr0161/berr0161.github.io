@@ -367,7 +367,7 @@ td, th {
         padding: 50px;
         margin-top: 10px;
     }
-/*
+
     .contain .team {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -388,7 +388,7 @@ td, th {
     .content2{
         grid-area: area9;
     }
-*/
+
 
     .form{
         grid-gap: 1rem;
@@ -404,6 +404,16 @@ td, th {
     }
     .contact{
         grid-area: area10;
+    }
+    .contact h2{
+        font-size: 3rem;
+    }
+    .contact h3 {
+        font-size: 1.5rem;
+    }
+
+    .map h2{
+        font-size:3rem ;
     }
 
     .map{
