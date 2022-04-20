@@ -10,8 +10,8 @@ body {
     overflow-x: hidden;
 }
 h1{
-    font-size: 22px;
-    margin-bottom: 1rem;
+    font-size: 26px;
+    margin-bottom: 6px;
 }
 
 h2 { 
@@ -92,8 +92,8 @@ input[id=search]{
     background-color: #2229 ;
     padding: 10px;
     position: absolute;
-    width: 80%;
-    left: 10%;
+    width: 90%;
+    left: 5%;
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -103,7 +103,8 @@ input[id=search]{
     height: 90%;
 }
 .main .maincontent .text {
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 .container {
     width: 100vw;
@@ -143,7 +144,7 @@ img {
 }
 
 .button1 {
-    padding: 10px;
+    padding: 6px;
     color: black; 
     background-color:#c78c06;
 }
@@ -268,7 +269,35 @@ td, th {
   }
 
 @media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .contain .maincontent .text {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .button1 {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
 
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
   
 @media screen and (min-width: 1200px) {
