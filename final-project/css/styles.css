@@ -1,4 +1,3 @@
-
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -317,6 +316,18 @@ td, th {
         width: 0%;
     }
 
+    .about img{
+        padding: 1rem;
+        width: 40%;
+        float: left;
+
+    }
+
+    .main img {
+        height: 30rem;
+    }
+
+
 
     .contain .services {
         display: grid;
@@ -356,30 +367,33 @@ td, th {
         padding: 50px;
         margin-top: 10px;
     }
-
+/*
     .contain .team {
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "area6 area7"
         "area8 area9";
     }
 
-    .ceo{
-        grid-area: area6;
+    .ceo content{
+        grid-area: area7;
     }
     .cfo{
         grid-area: area9;
     }
-    .ceo .content .info{
+    .contentinfo{
         grid-area: area7;
     }
-
+    .content2{
+        grid-area: area9;
+    }
+*/
 
     .form{
         grid-gap: 1rem;
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "area10 area11"
         "area12 area12"
