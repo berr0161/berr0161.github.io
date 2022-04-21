@@ -342,6 +342,7 @@ td, th {
     h3{
         font-weight: bold;
     }
+}
   /*Media screen for desktop starting at 1200px*/
 @media screen and (min-width: 1200px) {
     h1{
@@ -519,6 +520,5 @@ td, th {
         width: 100%;
         padding: 1rem;
         padding-left: 6rem;
-    }
-            
-    }
+    }       
+ }
