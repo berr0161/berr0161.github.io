@@ -56,23 +56,29 @@ header {
     background-color: #222;
 }
 nav li a {
-    padding: 5px;
+    padding: 10px 5px;
     color: #c78c06;
+    display: inline-block;
+    width: 100%;
 }
 .navli{
     width: 600px;
     margin: auto;
 }
-ul{
-    text-align: center;
+ul { align-items: center;
+    display: flex;
+    flex-direction: column;
     color: #c78c06;
+    text-align: center;
+    width: 100%;
 }
-nav li:hover{
+nav ul li {
+    width: 20%;
+}
+nav li a:hover{
     background-color: #c78c06;
     color: #222;
-}
-.nav li a:hover {
-    color: #222;
+    font-weight: bold;
 }
 
 .fa-solid{
@@ -131,7 +137,16 @@ input[id=search]{
 .search {
     width: 1.2rem;
     color: #c78c06;
-    border: 1px solid #c78c06
+    border: 1px solid #c78c06;
+}
+.search1 {
+    display: flex;
+    align-items: center;
+}
+.search1 .icon {
+    padding: 5px;
+    color: #c78c06;
+    border: 1px solid #c78c06;
 }
 .services .card {
     display: grid;
@@ -332,23 +347,59 @@ td, th {
         font-weight: bold;
     }
     header {
+        display: flex;
         width: 100%;
     }
-    nav{
-        justify-content: space-around;
+
+    .header {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        align-items: center;
+        padding: 1rem 0;
     }
 
+    nav {
+        display: flex;
+        width: 100%;
+        grid-gap: 3rem;
+    }
+
+    nav .logo2 {
+        width: 60px;
+        height: 60px;
+    }
+    
+    nav .logo2 .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header .search1 {
+        margin-left: 1rem;
+    }
+
+    .header .search {
+        border: 0;
+    }
+
+    .header .search i {
+        padding: 5px;
+        border: 1px solid #c78c06;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
     li{
         display: inline-block;
     }
-
     .logo{
         float:left;
-        margin-top: 2rem;
-    }
-
-    .logo2{
-        width: 0%;
     }
 
     .about img{
@@ -400,7 +451,18 @@ td, th {
         padding: 50px;
         margin-top: 10px;
     }
-/*
+    .contain .team .card {
+        display: flex;
+    }
+    .contain .team .cfo {
+        flex-direction: row-reverse;
+    }
+
+    .contain .team .card .info {
+        width: 50%;
+    }
+
+    /*
     .contain .team {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -408,6 +470,7 @@ td, th {
         "area6 area7"
         "area8 area9";
     }
+    */
 
     .ceo content{
         grid-area: area7;
@@ -421,7 +484,7 @@ td, th {
     .content2{
         grid-area: area9;
     }
-*/
+
 
     .form{
         grid-gap: 1rem;
