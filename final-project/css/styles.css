@@ -1,3 +1,4 @@
+/*Gives font family to the html both mobile and desktop */
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -35,7 +36,7 @@ p {
     width: 80%;
     margin: 0 auto;
 }
-
+/*For mobile, gives a background color, and aligns content to the center with a margin of auto */
 header {
     align-content: center;
     background-color: #222;
@@ -65,7 +66,9 @@ nav li a {
     width: 600px;
     margin: auto;
 }
-ul { align-items: center;
+
+ul 
+{ align-items: center;
     display: flex;
     flex-direction: column;
     color: #c78c06;
@@ -75,7 +78,7 @@ ul { align-items: center;
 nav ul li {
     width: 20%;
 }
-nav li a:hover{
+nav li a:hover, .active {
     background-color: #c78c06;
     color: #222;
     font-weight: bold;
@@ -96,6 +99,8 @@ input[id=search]{
     margin: 8px 0;
     box-sizing: border-box;
   }
+
+/*Gives dark background to the main content creating a dark box, I will use space around so it doesn't touch de edges  */
 .main .maincontent {
     background-color: #2229 ;
     padding: 10px;
@@ -124,16 +129,12 @@ input[id=search]{
 .main {
     position: relative;
     color: white;
-    /* background-image: url("../images/main-banner.jpg"); */
-    /* height: 400px; */
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
 }
-/* .main img {
-    position: absolute;
-} */
+
 .search {
     width: 1.2rem;
     color: #c78c06;
@@ -158,6 +159,12 @@ input[id=search]{
 img {
     width: 100%;
     height: auto;
+}
+/* I used float lef for the image located in about us section, I will use clearfix display block and clear both so it doesn't float to the right all my content*/
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .button1 {
@@ -191,6 +198,7 @@ img {
     border-top: 2px solid #c78c06;
 }
 
+
 .button3{
     padding: 10px;
     color: white;
@@ -219,7 +227,7 @@ img {
     background-color: #222;
 
 }
-
+/*Gives style to Our vision section, giving a font color of white and a background image, re-sizes image to cover the the hole section*/
 .vision{
     color: white;
     background-image: url("../images/vision.jpg");
@@ -230,6 +238,7 @@ img {
     background-size: cover;
 }
 
+/*Gives style to button located in our vision setion, giving a border, font color and background-color */
 .button7{
     padding: 10px;
     color: white;
@@ -237,7 +246,7 @@ img {
     border: 1px solid #c78c06;
 
 }
-
+/* Gives style to contact form affecting directly Fullname, email and message box*/
 input[type=text] {
     width: 100%;
     padding: 5px 20px;
@@ -252,13 +261,13 @@ input[id=message]{
     margin: 8px 0;
 
   }
-
+/*gives style to button located below the contact form for mobile*/
 .button8{
     color:#c78c06;
     background-color: #222;
 }
 
-
+/*Gives style to table for schedule section both mobile and desktop adding a color to the main tittles */
 td, th {
     border: 1px solid black;
      padding: 8px;
@@ -284,7 +293,7 @@ td, th {
     height: 450px;
     width:100%;
 }
-
+/*Centers footer for mobile with bleeding effect, and giving color to the background and the content*/
   footer{
       margin: auto;
       padding: 10px;
@@ -334,7 +343,7 @@ td, th {
         font-weight: bold;
     }
 }
-  
+  /*Media screen for desktop starting at 1200px*/
 @media screen and (min-width: 1200px) {
     h1{
         font-size: 4rem;
@@ -350,7 +359,6 @@ td, th {
         display: flex;
         width: 100%;
     }
-
     .header {
         display: grid;
         grid-template-columns: 4fr 1fr;
@@ -412,7 +420,7 @@ td, th {
     .main img {
         height: 30rem;
     }
-
+/*For desktop I will use a grid of 6 columns and 3 rows for the services section adding a grip gap so they are separate. Also, giving specificity to the services*/
     .contain .services {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -451,6 +459,7 @@ td, th {
         padding: 50px;
         margin-top: 10px;
     }
+    /*Creates a display flex on the team section, this will affect both CEO and CFO, in order to put the image and text of CFO section in different order I will use flex-direction: row-reverse affecting only the CFO */
     .contain .team .card {
         display: flex;
     }
@@ -461,16 +470,6 @@ td, th {
     .contain .team .card .info {
         width: 50%;
     }
-
-    /*
-    .contain .team {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "area6 area7"
-        "area8 area9";
-    }
-    */
 
     .ceo content{
         grid-area: area7;
@@ -484,8 +483,7 @@ td, th {
     .content2{
         grid-area: area9;
     }
-
-
+    /*A div with a class of form contains contact, schedule and map. For desktop I will use a grid-template-area of 2 coulmuns. contact and schedule to ocupy the first column and map and schedule to ocupy the second column */
     .form{
         grid-gap: 1rem;
         display: grid;
